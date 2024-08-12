@@ -1,0 +1,51 @@
+body {
+    background-color: #1c1d22;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Contenedor de las mangas */
+.manga {
+    padding: 10px;
+    background: #272731;
+    color: white;
+    border: 5px solid #272731;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px auto; /* Centra los elementos y les da un margen automático en pantallas grandes */
+    max-width: 300px; /* Máximo ancho de las cajas */
+}
+
+/* Estilos para el botón de compra */
+.comprarbuttom {
+    border: 1px solid #5965ed;
+    padding: 10px 20px;
+    background-color: #5965ed;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 50px;
+    box-shadow: 1px 0px 40px #5965ed;
+    display: inline-block; /* Hace que el botón se ajuste al al contenido*/
+}
+
+/* Reseteo de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 600px) {
+    .manga {
+        margin: 10px; /* Reduce el margen en pantallas pequeñas */
+        font-size: 12px; /* Aumenta el tamaño de fuente para mejor legibilidad */
+        max-width: 90%; /* Ajusta el ancho máximo en pantallas pequeñas */
+    }
+    
+    .comprarbuttom {
+        padding: 8px 16px; /* Ajusta el tamaño del padding del botón en pantallas pequeñas */
+    }
+}
