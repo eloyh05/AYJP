@@ -4,20 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TIKLOAD</title>
+
+  <meta name="theme-color" content="#000000" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <video autoplay muted loop id="bgVideo">
+    <source src="fondo.mp4" type="video/mp4" />
+  </video>
+
   <h2>TIKLOAD</h2>
   <input type="text" id="tiktokUrl" placeholder="Pega el enlace" />
   <button onclick="descargarVideo()">Descargar</button>
 
   <div id="videoContainer"></div>
 
-  <script src="script.js"></script>
-  
-  <footer>
-  Hecho por yoyoo
+  <!-- Modal de video -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content animate-in">
+      <span id="cerrarModal" class="close-btn">&times;</span>
+      <video id="modalVideo" autoplay muted loop></video>
+      <button id="btnDescargarModal">Ir a web de descarga</button>
+    </div>
+  </div>
+
+  <footer>Actualmente, la app utiliza una API externa para obtener los videos, y esta API ofrece los archivos de video en calidad estándar, normalmente 720p o inferior. Esto se debe a limitaciones.
 </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
