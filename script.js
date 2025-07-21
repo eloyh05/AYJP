@@ -6,7 +6,7 @@ async function descargarVideo() {
   container.innerHTML = "";
 
   if (!url.startsWith("http")) {
-    container.innerHTML = "<p class='error'>Por favor ingresa un enlace válido de TikTok.</p>";
+    container.innerHTML = "<p class='error'>Eso no parece ser un enlace de tik tok.</p>";
     return;
   }
 
