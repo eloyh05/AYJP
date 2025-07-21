@@ -11,7 +11,7 @@ body {
   animation: fadeIn 1s ease-in;
 }
 
-
+/* Título */
 h2 {
   margin-bottom: 20px;
   font-size: 28px;
@@ -20,7 +20,7 @@ h2 {
   animation: slideDown 1s ease-out;
 }
 
-
+/* Input y botón con animaciones */
 input,
 button {
   padding: 12px 16px;
@@ -33,7 +33,7 @@ button {
   backdrop-filter: blur(8px);
 }
 
-
+/* Estilo del cuadro de texto */
 input {
   width: 300px;
   max-width: 90%;
@@ -42,12 +42,13 @@ input {
   box-shadow: 0 0 10px #5865F2;
 }
 
-
+/* Efecto al enfocar */
 input:focus {
   background: #171717;
   box-shadow: 0 0 15px #5865F2;
 }
 
+/* Botón */
 button {
   background: #171717;
   color: #f1f1f1;
@@ -61,7 +62,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-
+/* Contenedor del video */
 #videoContainer {
   margin-top: 30px;
   text-align: center;
